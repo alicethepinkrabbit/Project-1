@@ -1,0 +1,61 @@
+@font-face {
+    font-family: Payback;
+    src: url(font/payback-2ojzv.otf);
+}
+
+@font-face {
+    font-family: LexendDeca;
+    src: url(font/LexendDeca-Light.ttf);
+}
+
+a {
+    text-decoration: none;
+    color: linen;
+}
+
+a:hover {
+    background-color: linen;
+    color: #0D3240;
+}
+
+body {
+    width: 40%;
+    margin: auto;
+    background-image: url('image/image-mesh-gradient-3.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: linen;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'LexendDeca'
+}
+
+h1 {
+    font-family: "Payback";
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: minmax(100px, 1fr);
+    row-gap: 40px;
+    column-gap: 60px;
+    justify-content: center;
+    align-content: center;
+}
+
+.reflections {
+    width: 40%;
+    margin-top: 50px;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-image: url(image/gradient-2.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: linen;
+    font-family: 'LexendDeca'
+}
