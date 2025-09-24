@@ -164,3 +164,43 @@ h1 {
     line-height: 1.6;
     text-align: left;
 }
+
+.content-2 img {
+    float: right;
+    max-width: 100%;
+    margin: 0 16px 12px 0;
+    cursor: pointer;
+}
+
+.content-2 p {
+    font-size: 15px;
+    line-height: 1.6;
+    text-align: left;
+}
+
+#gif .tenor-gif-embed {
+    align-self: center;
+}
+
+#gif a {
+    display: inline-block;
+    margin: 20px auto;
+    padding: 12px 24px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: linen;
+    font-size: 18px;
+    font-family: 'LexendDeca', sans-serif;
+    text-decoration: none;
+    border-radius: 10px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+#gif {
+    text-align: center;
+}
+
+#gif a:hover {
+    transform: scale(1.1);
+    background-color:  rgba(255, 255, 255, 0.2);
+}
