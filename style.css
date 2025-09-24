@@ -8,45 +8,93 @@
     src: url(font/LexendDeca-Light.ttf);
 }
 
-a {
-    text-decoration: none;
-    color: linen;
-}
-
-a:hover {
-    background-color: linen;
-    color: #0D3240;
-}
-
 body {
-    width: 40%;
+    width: 60%;
     margin: auto;
     background-image: url('image/image-mesh-gradient-3.png');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
     color: linen;
-    text-align: center;
+    text-align: right;
     font-size: 30px;
     font-family: 'LexendDeca'
 }
 
+.nav-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 50px;
+}
+
+.nav-buttons a {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: linen;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+
+.nav-buttons a:hover {
+    transform: scale(1.1);
+      background-color: rgba(255, 255, 255, 0.2);
+}
+
+.nav-buttons a:link,
+.nav-buttons a:visited {
+    color: linen;
+      background-color: rgba(255, 255, 255, 0.2);
+}
+
+.nav-buttons a:visited {
+    color: linen
+}
+
+.top {
+    text-align: right;
+    font-size: 30px;
+}
+
 h1 {
     font-family: "Payback";
+    font-size: 100px;
+    text-align: left;
 }
 
 .container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: minmax(100px, 1fr);
-    row-gap: 40px;
-    column-gap: 60px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.container img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    display: block;
+}
+
+.container .text {
+    display: flex;
     justify-content: center;
-    align-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    font-size: 2rem;
+    color: linen;
+    text-align: center;
+    padding: 20px;
 }
 
 .reflections {
-    width: 40%;
+    width: 60%;
     margin-top: 50px;
     margin-bottom: auto;
     margin-left: auto;
@@ -57,5 +105,62 @@ h1 {
     background-attachment: fixed;
     background-size: cover;
     color: linen;
-    font-family: 'LexendDeca'
+    font-family: 'LexendDeca';
+    line-height: 1.6;
+}
+
+.reflections h1 {
+    font-size: 32px;
+}
+
+.reflections .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 10px;
+    margin-top: 30px;
+    text-align: left;
+}
+
+.reflections .text {
+    flex: 2;
+    font-size: 15px;
+}
+
+.reflections .images {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+.reflections .images img {
+    max-width: 100%;
+    width: 220px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.tenor-gif-embed {
+    width: 220px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.response .tenor-gif-embed {
+    float: left;
+    width: 220px;
+    max-width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 0 16px 12px 0;
+    overflow: hidden;
+}
+
+.response p {
+    font-size: 15px;
+    line-height: 1.6;
+    text-align: left;
 }
