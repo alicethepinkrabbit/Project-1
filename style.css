@@ -185,15 +185,16 @@ h1 {
 #gif a {
     display: inline-block;
     margin: 20px auto;
-    padding: 12px 24px;
+    padding: 12px 28px;
     background-color: rgba(255, 255, 255, 0.2);
     color: linen;
-    font-size: 18px;
+    font-size: 20px;
     font-family: 'LexendDeca', sans-serif;
     text-decoration: none;
-    border-radius: 10px;
+    border-radius: 12px;
     text-align: center;
     transition: all 0.3s ease;
+    cursor: pointer;
 }
 
 #gif {
@@ -202,5 +203,5 @@ h1 {
 
 #gif a:hover {
     transform: scale(1.1);
-    background-color:  rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.2);
 }
